@@ -4,7 +4,7 @@ Acompanhe a Copa do Mundo FIFA 2026 em um **único arquivo HTML** — sem instal
 
 ## 🌐 Demo
 
-👉 **[Abrir agora via GitHub Pages](https://renanhvborges.github.io/copa-2026/copa-2026.html)**
+👉 **[Abrir agora via GitHub Pages](https://renanhvborges.github.io/copa-2026/copa-2026.html)** ← abre direto no browser, sem instalar nada!
 
 ## ✨ Funcionalidades
 
