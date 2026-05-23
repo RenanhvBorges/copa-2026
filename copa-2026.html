@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FIFA World Cup 2026 — Tabela Interativa</title>
+<link rel="icon" type="image/png" href="logo-wc2026.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -152,27 +153,15 @@ button{cursor:pointer;border:none;background:none;color:inherit}
   font-weight:900;
 }
 
-/* The "26" logo block — trophy + giant black 26 (mirrors official) */
-.logo-block{display:flex;align-items:center;gap:0;position:relative;z-index:1}
+/* Official FIFA World Cup 2026 logo */
+.logo-block{display:flex;align-items:center;position:relative;z-index:1}
 
-.logo-trophy{
-  width:48px;height:58px;
-  filter:drop-shadow(0 3px 6px rgba(212,175,55,.35));
-  margin-right:-8px;
-  position:relative;z-index:2;
+.logo-official{
+  height:80px;
+  width:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.15));
 }
-
-.logo-26{
-  display:flex;align-items:baseline;
-  font-family:var(--f-display);
-  font-size:62px;
-  line-height:.82;
-  letter-spacing:-3px;
-  position:relative;
-  font-weight:900;
-}
-.logo-26 .l2{color:var(--ink)}
-.logo-26 .l6{color:var(--ink);margin-left:-4px}
 
 .header-info{flex:1;position:relative;z-index:1}
 .header-title{
@@ -573,8 +562,7 @@ button{cursor:pointer;border:none;background:none;color:inherit}
 @media(max-width:768px){
   .header{padding:14px 16px;gap:14px;flex-wrap:wrap}
   .header::before{font-size:140px;right:-20px}
-  .logo-26{font-size:42px}
-  .logo-trophy{width:38px;height:44px}
+  .logo-official{height:56px}
   .header-title{font-size:20px}
   .header-sub{font-size:10px;letter-spacing:2px;gap:6px;flex-wrap:wrap}
   .tagline{font-size:11px;letter-spacing:2px;padding:5px 10px}
@@ -626,31 +614,8 @@ button{cursor:pointer;border:none;background:none;color:inherit}
   <div class="tricolor-bar" aria-hidden="true"></div>
   <header class="header">
     <div class="logo-block">
-      <!-- World Cup Trophy SVG (stylized) -->
-      <svg class="logo-trophy" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Trophy">
-        <defs>
-          <linearGradient id="trophyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#E8C97A"/>
-            <stop offset="50%" stop-color="#D4AF37"/>
-            <stop offset="100%" stop-color="#8F7530"/>
-          </linearGradient>
-        </defs>
-        <!-- Cup body (curved bowl) -->
-        <path d="M14 6 L34 6 L36 8 L36 20 Q36 32 24 36 Q12 32 12 20 L12 8 Z" fill="url(#trophyGrad)" stroke="#8F7530" stroke-width="0.5"/>
-        <!-- Side handles -->
-        <path d="M12 10 Q6 11 5 16 Q5 21 11 22" stroke="url(#trophyGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        <path d="M36 10 Q42 11 43 16 Q43 21 37 22" stroke="url(#trophyGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        <!-- Stem -->
-        <rect x="22" y="36" width="4" height="8" fill="url(#trophyGrad)"/>
-        <!-- Base -->
-        <path d="M14 44 L34 44 L36 48 L34 52 L14 52 L12 48 Z" fill="url(#trophyGrad)" stroke="#8F7530" stroke-width="0.5"/>
-        <!-- Globe lines on cup -->
-        <ellipse cx="24" cy="20" rx="10" ry="3" fill="none" stroke="rgba(0,0,0,.15)" stroke-width="0.4"/>
-        <path d="M14 20 Q24 16 34 20" fill="none" stroke="rgba(0,0,0,.15)" stroke-width="0.4"/>
-      </svg>
-      <div class="logo-26" aria-label="26">
-        <span class="l2">2</span><span class="l6">6</span>
-      </div>
+      <!-- Official FIFA World Cup 2026 logo -->
+      <img class="logo-official" src="logo-wc2026.png" alt="FIFA World Cup 2026" />
     </div>
     <div class="header-info">
       <div class="header-title">FIFA WORLD CUP <span class="accent">26</span>™</div>
